@@ -10,8 +10,17 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  
-    padding: 20px;  
+    transform: translate(-50%, -50%);   
+}
+
+.sysName {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.signin-input {
+    padding: 30px;
     background-color: white;
     -webkit-box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.22);
     -moz-box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.22);
@@ -21,6 +30,7 @@ body {
 .login input {
     /* width: 100%; */
     margin: 5px;
+    border-radius: 0;
     /* clear: both; */
 }
 
