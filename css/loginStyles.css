@@ -1,0 +1,46 @@
+body {
+    background: url('../img/loginBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    padding: 20px;  
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.22);
+}
+
+.login input {
+    /* width: 100%; */
+    margin: 5px;
+    /* clear: both; */
+}
+
+.login button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: #168944;
+    color: white;
+    width: 100%;
+    margin: 10px 0px
+}
+
+.login a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login h2 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px
+}
