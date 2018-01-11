@@ -1,0 +1,45 @@
+body {
+    font-family: 'Quicksand', sans-serif 
+}
+
+ul {
+    list-style: none;
+    margin: 0
+}
+
+ul li {
+    padding: 10px;
+    margin-right: 10px;
+    font-family: 'Quicksand', sans-serif !important
+}
+
+.navbar {
+    background-color: gray;
+} 
+
+.navbar-default .navbar-brand {
+    color: white
+}
+
+.navbar-right button{
+    background-color: #17a4db;
+    color: white
+}
+
+.mainContainer {
+    display: grid;
+    min-height: 100%;
+    width: 100%;
+    grid-template-rows: 100%
+}
+
+.sidebar {
+    position: absolute;
+    background-color: white;
+    min-height: 100%
+}
+
+.mainbar {
+    background-color: green;
+    min-height: 100%
+}
