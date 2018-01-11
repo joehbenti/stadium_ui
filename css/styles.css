@@ -1,45 +1,23 @@
-body {
-    font-family: 'Quicksand', sans-serif 
+.choose_venue {
+    /* clear: both; */
+    padding-top: 20px;
+    /* margin-top:  20px */
+    /* display: block; */
 }
 
-ul {
-    list-style: none;
-    margin: 0
+.choose_venue input {
+    display: inline
 }
 
-ul li {
-    padding: 10px;
-    margin-right: 10px;
-    font-family: 'Quicksand', sans-serif !important
+.choose_venue span {
+    font-weight: bold;
+    padding-right: 10px
 }
 
-.navbar {
-    background-color: gray;
-} 
-
-.navbar-default .navbar-brand {
-    color: white
+.venue_choice {
+    padding: 5px;
 }
 
-.navbar-right button{
-    background-color: #17a4db;
-    color: white
-}
-
-.mainContainer {
-    display: grid;
-    min-height: 100%;
-    width: 100%;
-    grid-template-rows: 100%
-}
-
-.sidebar {
-    position: absolute;
-    background-color: white;
-    min-height: 100%
-}
-
-.mainbar {
-    background-color: green;
-    min-height: 100%
+.space {
+    margin-top: 20px;
 }
