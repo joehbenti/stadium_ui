@@ -22,11 +22,31 @@
     margin-top: 20px;
 }
 
-.contentHolder {
-    padding: 20px
-}
-
 .card-header-yellow {
     background-color: rgb(255, 217, 0);
     /* color: white */
+}
+
+.contentHolder {
+    padding: 20px;
+}
+
+.contentHolder span, .contentHolder p {
+    text-align: center;
+    width: 100%;
+}
+
+.clublogo {
+    padding-bottom: 15px;
+}
+
+.clubname {
+    vertical-align: middle;
+}
+
+.stickymore {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
 }
