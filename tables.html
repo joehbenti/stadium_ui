@@ -41,14 +41,14 @@
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion" style="border-right: 1px solid gray">
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link active">
+          <a class="nav-link" href="home.html">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#eventsdropdown" data-parent="#exampleAccordion">
+          <a class="nav-link nav-link-collapse collapsed " data-toggle="collapse" href="#eventsdropdown" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-calendar"></i>
             <span class="nav-link-text">Events</span>
           </a>
@@ -79,13 +79,13 @@
         </li>
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+          <a class="nav-link nav-link-collapse collapsed active" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-wrench"></i>
             <span class="nav-link-text">Tournaments</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
-                <a href="tables.html">Tournament Type</a>
+              <a href="tables.html">Tournament Type</a>
             </li>
             <li>
               <a href="#">Cards</a>
@@ -174,30 +174,23 @@
 
   <div class="content-wrapper">
     <div class="container-fluid">
-      <div class="row">
-        <div class="container-fluid">
-          <div class="choose_venue pull-right">
-            <span>Venue</span>
-            <select name="venues" id="" class="venue_choice">
-              <option value="">All Stadiums </option>
-              <option value="">Addis Ababa Stadium </option>
-              <option value="">Abebe Bikila Stadium</option>
-            </select>
-          </div>
-        </div>
-      </div>
 
       <div class="container-fluid">
         <div class="space">
           <div class="row">
-            <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="card col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="row card-header">
-                <h5>Ticket Sale/Catagory</h5>
+                <h5>Tournaments</h5>
               </div>
-              <canvas id="myChart" width="400" height="400"></canvas>
+
+              <div class="contentHolder">
+                <table class="table">
+                    asd
+                </table>
+              </div>
             </div>
 
-            <div class="col-lg-4">
+            <!-- <div class="col-lg-4">
               <div class="col-lg-12">
                 <div class="row">
                   <div class="card col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -210,36 +203,8 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div class="col-lg-4">
-                <div class="col-lg-12">
-                  <div class="row">
-                    <div class="card col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div class="row card-header card-header-yellow">
-                        <h5>Total Sales</h5>
-                      </div>
-                      <div class="contentHolder">
-                        Content Here
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="space">
-          <div class="row">
-            <div class="card col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="row card-header">
-                <h5>Event</h5>
-              </div>
-              Content here.
-            </div>
           </div>
         </div>
       </div>
@@ -277,53 +242,11 @@
       </div>
     </div>
 
-
-
     <script src="js/jquery.js"></script>
     <script src="js/Chart.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/jquery.easing.js"></script>
     <script src="js/sb-admin.js"></script>
-
-    <script>
-      var ctx = document.getElementById("myChart").getContext('2d');
-      var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-          datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-              'rgba(255,99,132,1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true
-              }
-            }]
-          }
-        }
-      });
-    </script>
   </div>
 </body>
 
