@@ -21,3 +21,12 @@
 .space {
     margin-top: 20px;
 }
+
+.contentHolder {
+    padding: 20px
+}
+
+.card-header-yellow {
+    background-color: rgb(255, 217, 0);
+    /* color: white */
+}
