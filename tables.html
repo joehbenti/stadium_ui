@@ -13,6 +13,7 @@
   <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
   <link href="css/sb-admin.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link href="css/datatables.css" rel="stylesheet" />
 
   <style>
     body {
@@ -175,35 +176,108 @@
   <div class="content-wrapper">
     <div class="container-fluid">
 
+      <div class="row" style="background-color: rgb(184, 184, 184); padding: 10px">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2>Tournament</h2>
+        </div>
+      </div>
+
       <div class="container-fluid">
         <div class="space">
           <div class="row">
             <div class="card col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="row card-header">
-                <h5>Tournaments</h5>
-              </div>
+
 
               <div class="contentHolder">
-                <table class="table">
-                    asd
-                </table>
+
+                <div style="padding:10px 0">
+                  Tournament types are listed here. or Some discription.
+                </div>
+
+                <hr>
+
+                <!-- <table class="table"> -->
+                  <div class="content table-full-width">
+                    <table class="table table-light" style="width: 100%">
+                      <thead class="table-bordered">
+                        <th data-priority="1">Date</th>
+                        <th data-priority="2">Tournament Type</th>
+                        <th data-priority="1">Customer</th>
+                        <th>Merchant</th>
+                        <th>Service Number</th>
+                        <th>Actions</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Jan 01, 2017</td>
+                          <td>Utility Payment</td>
+                          <td>Taddesse</td>
+                          <td>Unified Billing Service</td>
+                          <td>$188.00</td>
+                          <td>
+                            <button class="btn btn-default">Details</button>
+                            <button class="btn btn-success">Edit</button>
+                            <button class="btn btn-danger">Delete</button>
+                          </td>
+                          <tr>
+                            <td>Jan 01, 2017</td>
+                            <td>Utility Payment</td>
+                            <td>Taddesse</td>
+                            <td>Unified Billing Service</td>
+                            <td>$188.00</td>
+                            <td>
+                              <button class="btn btn-default">Details</button>
+                              <button class="btn btn-success">Edit</button>
+                              <button class="btn btn-danger">Delete</button>
+                            </td>
+                            <tr>
+                              <td>Jan 01, 2017</td>
+                              <td>Utility Payment</td>
+                              <td>Taddesse</td>
+                              <td>Unified Billing Service</td>
+                              <td>$188.00</td>
+                              <td>
+                                <button class="btn btn-default">Details</button>
+                                <button class="btn btn-success">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                              </td>
+                            </tr>
+
+
+                      </tbody>
+                    </table>
+
+                  </div>
+                <!-- </table> -->
               </div>
             </div>
 
-            <!-- <div class="col-lg-4">
-              <div class="col-lg-12">
-                <div class="row">
-                  <div class="card col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="row card-header card-header-yellow">
-                      <h5>Total Transaction</h5>
+            <table class="space table table-light" style="width: 100%">
+              <tbody>
+                <tr>
+                  <td class="row col-lg-12">
+                    <div class="col-lg-5">
+                      <img src="img/clubs/buna-small.png" width="100%" alt="">
                     </div>
-                    <div class="contentHolder">
-                      Content Here
+                    <div class="col-lg-2" style="hyphens: none;">VS</div>
+                    <div class="col-lg-5">
+                      <img src="img/clubs/buna-small.png" width="100%" alt="">
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
+                  </td>
+
+                  <td class="">
+                    <div>Buna vs Bunna</div>
+                    <div>Ethiopian Premier League</div>
+                    <div>Friday 13, 2017 - Starting Time 10:00</div>
+                  </td>
+                  <td>
+                    <button class="btn btn-default">Details</button>
+                    <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
           </div>
         </div>
@@ -242,12 +316,33 @@
       </div>
     </div>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/Chart.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/jquery.easing.js"></script>
-    <script src="js/sb-admin.js"></script>
+
   </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/Chart.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/dataTables.js"></script>
+  <script src="js/sb-admin.js"></script>
+
+  <script>
+    $('.table').dataTable({
+      responsive: true,
+      paging: true,
+      ordering: true,
+      info: false,
+      searching: true,
+      columnDefs: [{
+          responsivePriority: 1,
+          targets: 0
+        },
+        {
+          responsivePriority: 2,
+          targets: -1
+        }
+      ]
+    });
+  </script>
 </body>
 
 </html>
