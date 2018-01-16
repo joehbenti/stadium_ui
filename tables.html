@@ -48,6 +48,13 @@
           </a>
         </li>
 
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="matches.html">
+            <i class="fa fa-fw fa-futbol-o"></i>
+            <span class="nav-link-text">Matches</span>
+          </a>
+        </li>
+
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link nav-link-collapse collapsed " data-toggle="collapse" href="#eventsdropdown" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-calendar"></i>
@@ -65,13 +72,13 @@
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#teamsdropdown" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-table"></i>
+            <i class="fa fa-fw fa-users"></i>
             <span class="nav-link-text">Teams</span>
           </a>
 
           <ul class="sidenav-second-level collapse" id="teamsdropdown">
             <li>
-              <a href="#">Navbar</a>
+              <a href="teams.html">Teams</a>
             </li>
             <li>
               <a href="#">Cards</a>
@@ -81,7 +88,7 @@
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
           <a class="nav-link nav-link-collapse collapsed active" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-wrench"></i>
+            <i class="fa fa-fw fa-trophy"></i>
             <span class="nav-link-text">Tournaments</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
@@ -95,7 +102,7 @@
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-file"></i>
+            <i class="fa fa-fw fa-user-md"></i>
             <span class="nav-link-text">User Managements</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
@@ -139,7 +146,7 @@
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#reportdropdown" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-link"></i>
+            <i class="fa fa-fw fa-file-text-o"></i>
             <span class="nav-link-text">Report</span>
           </a>
           <ul class="sidenav-second-level collapse" id="reportdropdown">
@@ -185,99 +192,328 @@
       <div class="container-fluid">
         <div class="space">
           <div class="row">
-            <div class="card col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 
               <div class="contentHolder">
 
-                <div style="padding:10px 0">
+                <!-- <div style="padding:10px 0">
                   Tournament types are listed here. or Some discription.
+                </div> -->
+
+                <!-- <hr> -->
+
+                <div class="content table-full-width">
+                  <table class="table table-bordered table-hover" style="width: 100%">
+                    <thead>
+                      <th data-priority="1">Date</th>
+                      <th data-priority="2">Transaction Type</th>
+                      <th data-priority="1">Customer</th>
+                      <th>Merchant</th>
+                      <th>Action</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td >
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Joe</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr><tr>
+                        <td>Jan 01, 2017</td>
+                        <td>Utility Payment</td>
+                        <td>Taddesse</td>
+                        <td>Unified Billing Service</td>
+                        <td>
+                          <button class="btn btn-default">Details</button>
+                          <button class="btn btn-success">Edit</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
                 </div>
-
-                <hr>
-
-                <!-- <table class="table"> -->
-                  <div class="content table-full-width">
-                    <table class="table table-light" style="width: 100%">
-                      <thead class="table-bordered">
-                        <th data-priority="1">Date</th>
-                        <th data-priority="2">Tournament Type</th>
-                        <th data-priority="1">Customer</th>
-                        <th>Merchant</th>
-                        <th>Service Number</th>
-                        <th>Actions</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Jan 01, 2017</td>
-                          <td>Utility Payment</td>
-                          <td>Taddesse</td>
-                          <td>Unified Billing Service</td>
-                          <td>$188.00</td>
-                          <td>
-                            <button class="btn btn-default">Details</button>
-                            <button class="btn btn-success">Edit</button>
-                            <button class="btn btn-danger">Delete</button>
-                          </td>
-                          <tr>
-                            <td>Jan 01, 2017</td>
-                            <td>Utility Payment</td>
-                            <td>Taddesse</td>
-                            <td>Unified Billing Service</td>
-                            <td>$188.00</td>
-                            <td>
-                              <button class="btn btn-default">Details</button>
-                              <button class="btn btn-success">Edit</button>
-                              <button class="btn btn-danger">Delete</button>
-                            </td>
-                            <tr>
-                              <td>Jan 01, 2017</td>
-                              <td>Utility Payment</td>
-                              <td>Taddesse</td>
-                              <td>Unified Billing Service</td>
-                              <td>$188.00</td>
-                              <td>
-                                <button class="btn btn-default">Details</button>
-                                <button class="btn btn-success">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
-                              </td>
-                            </tr>
-
-
-                      </tbody>
-                    </table>
-
-                  </div>
-                <!-- </table> -->
               </div>
             </div>
 
-            <table class="space table table-light" style="width: 100%">
-              <tbody>
-                <tr>
-                  <td class="row col-lg-12">
-                    <div class="col-lg-5">
-                      <img src="img/clubs/buna-small.png" width="100%" alt="">
-                    </div>
-                    <div class="col-lg-2" style="hyphens: none;">VS</div>
-                    <div class="col-lg-5">
-                      <img src="img/clubs/buna-small.png" width="100%" alt="">
-                    </div>
-                  </td>
-
-                  <td class="">
-                    <div>Buna vs Bunna</div>
-                    <div>Ethiopian Premier League</div>
-                    <div>Friday 13, 2017 - Starting Time 10:00</div>
-                  </td>
-                  <td>
-                    <button class="btn btn-default">Details</button>
-                    <button class="btn btn-success">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
 
           </div>
         </div>
@@ -332,15 +568,6 @@
       ordering: true,
       info: false,
       searching: true,
-      columnDefs: [{
-          responsivePriority: 1,
-          targets: 0
-        },
-        {
-          responsivePriority: 2,
-          targets: -1
-        }
-      ]
     });
   </script>
 </body>

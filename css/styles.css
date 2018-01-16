@@ -50,3 +50,30 @@
     background-color: rgb(219, 219, 219);
     padding: 10px;
 }
+
+.actionBtn {
+    text-align: center;
+    vertical-align: middle !important
+}
+
+
+
+.card img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+ 
+.clubinfo {
+    text-align: center;
+    padding: 10px;
+    /* background-color: rgb(209, 209, 209) */
+}
+
+.clubdetail {
+    padding: 0 10px 0 10px;
+}
+
+#clubInfo {
+    background-color: rgb(230, 230, 230);
+}
