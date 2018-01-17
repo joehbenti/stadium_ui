@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>League Management</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/datatables.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .active {
+            background-color: #17a4db;
+        }
+    </style>
+
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <img src="img/logo.png" width="60px" alt="EFF Logo">
+        <a class="navbar-brand" href="index.html" style="font-weight: bold">League Management</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion" style="border-right: 1px solid gray">
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                    <a class="nav-link" href="home.html">
+                        <i class="fa fa-fw fa-dashboard"></i>
+                        <span class="nav-link-text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                    <a class="nav-link" href="matches.html">
+                        <i class="fa fa-fw fa-futbol-o"></i>
+                        <span class="nav-link-text">Matches</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+                    <a class="nav-link nav-link-collapse collapsed active" data-toggle="collapse" href="#eventsdropdown" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-calendar"></i>
+                        <span class="nav-link-text">Events</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="eventsdropdown">
+                        <li>
+                            <a href="events.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="#">Sub menu 1</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#teamsdropdown" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-users"></i>
+                        <span class="nav-link-text">Teams</span>
+                    </a>
+
+                    <ul class="sidenav-second-level collapse" id="teamsdropdown">
+                        <li>
+                            <a href="teams.html">Teams</a>
+                        </li>
+                        <li>
+                            <a href="#">Cards</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-trophy"></i>
+                        <span class="nav-link-text">Tournaments</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseComponents">
+                        <li>
+                            <a href="tables.html">Tournament Type</a>
+                        </li>
+                        <li>
+                            <a href="#">Cards</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-user-md"></i>
+                        <span class="nav-link-text">User Managements</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                        <li>
+                            <a href="login.html">Login Page</a>
+                        </li>
+                        <li>
+                            <a href="register.html">Registration Page</a>
+                        </li>
+                        <li>
+                            <a href="forgot-password.html">Forgot Password Page</a>
+                        </li>
+                        <li>
+                            <a href="blank.html">Blank Page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-sitemap"></i>
+                        <span class="nav-link-text">Organization</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseMulti">
+                        <li>
+                            <a href="#">Second Level Item</a>
+                        </li>
+                        <li>
+                            <a href="#">Second Level Item</a>
+                        </li>
+                        <li>
+                            <a href="#">Second Level Item</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-fw fa-link"></i>
+                        <span class="nav-link-text">Setting</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#reportdropdown" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-file-text-o"></i>
+                        <span class="nav-link-text">Report</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="reportdropdown">
+                        <li>
+                            <a href="#">Second Level Item</a>
+                        </li>
+                        <li>
+                            <a href="#">Second Level Item</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                    <a class="nav-link text-center" id="sidenavToggler" style="border-right: 1px solid gray">
+                        <i class="fa fa-fw fa-angle-left"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fa fa-user">UserName</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="background-color: #17a4db" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-fw fa-sign-out"></i>Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="container-fluid">
+
+            <div class="row" style="background-color: rgb(184, 184, 184); padding: 10px 0 10px 0">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2>Events</h2>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="space">
+                    <div class="row">
+
+                        <div class="container-fluid">
+                            <div class="choose_venue pull-right">
+                                <span>Event Type</span>
+                                <select name="venues" id="venue" class="venue_choice">
+                                    <option value="all">All Events</option>
+                                    <option value="atlectics">Atlectics</option>
+                                    <option value="football">Football</option>
+                                    <option value="concerts">Concerts</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row space" id="concerts">
+                        <div class="space col-lg-12">
+                            <span>
+                                <b>Concerts</b>
+                            </span>
+                            <span>
+                                <a href="" class="btn pull-right">Show More</a>
+                            </span>
+                            <hr>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="event-card">
+                                <img src="img/event-bg.jpg" width="100%" alt="">
+                                <div class="event-detail">
+                                    <h2>New year Concert</h2>
+                                    <h6>Sat 20, 2017 - Start Time: 9:30</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="event-card">
+                                <img src="img/stadium.jpg" width="100%">
+                                <div class="event-detail-option">
+                                    <div>
+                                        <h2>Opening Ceremony Concert</h2>
+                                        <h6>Sat 20, 2017 - Start Time: 9:30</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="event-card">
+                                <img src="img/event-bg-2.jpg" alt="">
+                                <div class="event-detail">
+                                    <h2>Hidase Concert</h2>
+                                    <h6>Sat 20, 2017 - Start Time: 9:30</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- end of events -->
+
+                    <div class="space" id="matches">
+                        <div class="space col-lg-12">
+                            <span>
+                                <b> Matches</b>
+                            </span>
+                            <hr>
+                        </div>
+                        <table class="container-fluid table-hover">
+                            <tr>
+                                <td class="row" style="padding: 10px 0 10px 0">
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/buna.png" width="100%" alt="">
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <span>
+                                            <b>VS</b>
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/buna.png" width="100%" alt="">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div>
+                                        <b>
+                                            <h5>Buna vs Assosa</h5>
+                                        </b>
+                                    </div>
+                                    <div>
+                                        Ethiopian Premier League
+                                    </div>
+                                    <h6>Friday 13, 2017 - Starting Time 10:00</h6>
+                                </td>
+                                <td class="actionBtn">
+                                    <button class="btn btn-default">Details</button>
+                                    <button class="btn btn-success">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row" style="padding: 10px 0 10px 0">
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/buna.png" width="100%" alt="">
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <span>
+                                            <b>VS</b>
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/buna.png" width="100%" alt="">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div>
+                                        <b>
+                                            <h5>Buna vs Assosa</h5>
+                                        </b>
+                                    </div>
+                                    <div>
+                                        Ethiopian Premier League
+                                    </div>
+                                    <h6>Friday 13, 2017 - Starting Time 10:00</h6>
+                                </td>
+                                <td class="actionBtn">
+                                    <button class="btn btn-default">Details</button>
+                                    <button class="btn btn-success">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row" style="padding: 10px 0 10px 0">
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/buna.png" width="100%" alt="">
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <span>
+                                            <b>VS</b>
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/buna.png" width="100%" alt="">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div>
+                                        <b>
+                                            <h5>Buna vs Assosa</h5>
+                                        </b>
+                                    </div>
+                                    <div>
+                                        Ethiopian Premier League
+                                    </div>
+                                    <h6>Friday 13, 2017 - Starting Time 10:00</h6>
+                                </td>
+                                <td class="actionBtn">
+                                    <button class="btn btn-default">Details</button>
+                                    <button class="btn btn-success">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row" style="padding: 10px 0 10px 0">
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/fasil.png" width="100%" alt="">
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <span>
+                                            <b>VS</b>
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/stgiorgis.png" width="100%" alt="">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div>
+                                        <b>
+                                            <h5>Buna vs Assosa</h5>
+                                        </b>
+                                    </div>
+                                    <div>
+                                        Ethiopian Premier League
+                                    </div>
+                                    <h6>Friday 13, 2017 - Starting Time 10:00</h6>
+                                </td>
+                                <td class="actionBtn">
+                                    <button class="btn btn-default">Details</button>
+                                    <button class="btn btn-success">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row" style="padding: 10px 0 10px 0">
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/buna.png" width="100%" alt="">
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <span>
+                                            <b>VS</b>
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/buna.png" width="100%" alt="">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div>
+                                        <b>
+                                            <h5>Buna vs Assosa</h5>
+                                        </b>
+                                    </div>
+                                    <div>
+                                        Ethiopian Premier League
+                                    </div>
+                                    <h6>Friday 13, 2017 - Starting Time 10:00</h6>
+                                </td>
+                                <td class="actionBtn">
+                                    <button class="btn btn-default">Details</button>
+                                    <button class="btn btn-success">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row" style="padding: 10px 0 10px 0">
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/buna.png" width="100%" alt="">
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <span>
+                                            <b>VS</b>
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/clubs/buna.png" width="100%" alt="">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div>
+                                        <b>
+                                            <h5>Buna vs Assosa</h5>
+                                        </b>
+                                    </div>
+                                    <div>
+                                        Ethiopian Premier League
+                                    </div>
+                                    <h6>Friday 13, 2017 - Starting Time 10:00</h6>
+                                </td>
+                                <td class="actionBtn">
+                                    <button class="btn btn-default">Details</button>
+                                    <button class="btn btn-success">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer" style="background-color: white">
+        <div class="container">
+            <div class="text-center">
+                <!-- <small>Copyright © Your Website 2017</small> -->
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/dataTables.js"></script>
+    <script src="js/sb-admin.js"></script>
+
+    <script>
+        var e = document.getElementById("venue");
+        var match = document.getElementById("matches");
+        var concert = document.getElementById("concerts");
+
+        e.addEventListener("change", function () {
+            var value = e.options[e.selectedIndex].value;
+            // console.log(value);
+
+            switch (value) {
+                case "football":
+                    concert.style.display = "none";
+                    match.style.display = "block";
+                    break;
+                case "concerts":
+                    match.style.display = "none";
+                    concert.style.display = "flex";
+                    break;
+                case "all":
+                    concert.style.display = "flex";
+                    match.style.display = "block";
+                    break;
+                default:
+                    concert.style.display = "flex";
+                    match.style.display = "block";
+                    break;
+            }
+        });
+
+        $('.table').dataTable({
+            responsive: true,
+            paging: true,
+            ordering: true,
+            info: false,
+            searching: true,
+        });
+    </script>
+</body>
+
+</html>
