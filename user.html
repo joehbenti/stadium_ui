@@ -41,7 +41,7 @@
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion" style="border-right: 1px solid gray">
 
         <li class="nav-item " data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link active" href="home.html">
+          <a class="nav-link" href="home.html">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
           </a>
@@ -100,7 +100,7 @@
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+          <a class="nav-link nav-link-collapse collapsed active" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-user-md"></i>
             <span class="nav-link-text">User Managements</span>
           </a>
@@ -108,7 +108,7 @@
             <li>
               <a href="user.html">Users</a>
             </li>
-        
+
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
@@ -176,126 +176,42 @@
 
       <div class="row" style="background-color: rgb(184, 184, 184); padding: 10px">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h2>Dashboard</h2>
+          <h2>Users</h2>
         </div>
       </div>
-
-      <div class="row">
-        <div class="container-fluid">
-          <div class="choose_venue pull-right">
-            <span>Venue</span>
-            <select name="venues" id="" class="venue_choice">
-              <option value="">All Stadiums </option>
-              <option value="">Addis Ababa Stadium </option>
-              <option value="">Abebe Bikila Stadium</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
 
       <div class="container-fluid">
         <div class="row space">
-          <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="row card-header">
-              <h5>Ticket Sale/Catagory</h5>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+            <div class="card">
+              <div class="row users">
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                  <img src="img/event-bg.jpg" width="100%" alt="">
+                </div>
+                <div class="col-lg-8">
+                  <h4>Name: </h4>
+                  <h6>Role: </h6>
+                  <h6>Description: </h6>
+                </div>
+              </div>
             </div>
-            <canvas id="myChart" width="400" height="400"></canvas>
           </div>
 
-          <div class="col-lg-8">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="user-card">
 
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="row card-header card-header-yellow">
-                    <h5>Total Transaction</h5>
-                  </div>
-                  <div class="contentHolder">
-                    <span>
-                      <h1>12,140 birr</h1>
-                    </span>
-                    <hr>
-                    <p>Total Amount from a Single Venue</p>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-8">
-                <div class="card">
-                  <div class="card-header card-header-yellow">
-                    <h5>Current Game</h5>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="row space">
-                      <div class="col-lg-5">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <img src="img/clubs/stgiorgis.png" class="clublogo" alt="club logo" width="100%">
-                          </div>
-                          <div class="col-lg-8">
-                            <h4 class="clubname">St. Giorgis Football Club</h4>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-2">
-                        <h1 style="text-align: center">VS</h1>
-                      </div>
-
-                      <div class="col-lg-5">
-                        <div class="row">
-                          <div class="col-lg-8">
-                            <h4 class="clubname" style="text-align: right">Buna Football Club</h4>
-
-                          </div>
-                          <div class="col-lg-4">
-                            <img src="img/clubs/buna.png" class="clublogo" alt="club logo" width="100%">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="stickymore">
-                    <a href="#">
-                      <h6>Show More</h6>
-                    </a>
-                  </div>
-
-                </div>
               </div>
             </div>
-
-            <div class="row space">
-              <div class="col-lg-4">
-                <div class="card">
-                  <div class="card-header card-header-yellow">
-                    <h5>other info</h5>
-                  </div>
-                  asda
-                </div>
-              </div>
-            </div>
-
           </div>
+          <div class="col-lg-4">
+            <div class="card">
 
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- <div class="container-fluid">
-      <div class="space">
-        <div class="card col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="row card-header">
-            <h5>Event</h5>
-          </div>
-          Content here.
-        </div>
-      </div>
-    </div> -->
   </div>
 
   <!-- /.container-fluid-->
