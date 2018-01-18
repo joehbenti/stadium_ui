@@ -144,3 +144,17 @@ span.col-lg-2 {
 .users {
     padding: 10px;
 }
+
+.stadium {
+    max-height: 300px;
+    min-height: 200px;
+    /* margin-bottom: 20px; */
+    overflow: hidden;   
+}
+
+.stadium .col-lg-8 {
+    max-height: 300px;
+    min-height: 100px;
+    overflow-y: scroll;
+    /* scroll-behavior: auto */
+}
