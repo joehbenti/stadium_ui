@@ -128,12 +128,14 @@
     box-shadow: 0px 8px 43px -9px rgba(0, 0, 0, 0.75);
 }
 
-span.col-lg-2 {
+h1.col-lg-3 {
     height: 100px;
     line-height: 100px;
     white-space: nowrap;
     text-align: center;
     vertical-align: middle;
+    font-weight: bolder;
+    opacity: .5
 }
 
 .users img {
@@ -149,7 +151,7 @@ span.col-lg-2 {
     max-height: 300px;
     min-height: 200px;
     /* margin-bottom: 20px; */
-    overflow: hidden;   
+    overflow: hidden    ;   
 }
 
 .stadium .col-lg-8 {
@@ -157,4 +159,32 @@ span.col-lg-2 {
     min-height: 100px;
     overflow-y: scroll;
     /* scroll-behavior: auto */
+}
+
+.host {
+    background-color: #17a4db;
+    padding: 7px;
+    color: white;
+    text-align: center;
+    border-radius: 10px
+}
+
+.away {
+    background-color: #ff8819;
+    padding: 7px;
+    color: white;
+    text-align: center;
+    border-radius: 10px
+}
+
+.club-logo {
+    position: relative
+}
+
+.club-logo span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* left: 0; */
+    /* width: 60px */
 }
