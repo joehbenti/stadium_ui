@@ -191,5 +191,22 @@ h1.col-lg-3 {
 
 .breadcrumb {
     padding: 10px;
-    margin: 10px
+    margin: 10px;
+    background-color: rgb(231, 231, 231);
+}
+
+.breadcrumb-active {
+    color: #17a4db !important;
+    background-color: #17a3db00;
+}
+
+.ticketingContent {
+    height: 100vh;
+    overflow-y: scroll
+}
+
+.main-content {
+    height: 100%;
+    overflow: hidden;
+    /* position: fixed; */
 }
