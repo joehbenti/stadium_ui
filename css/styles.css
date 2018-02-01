@@ -210,3 +210,22 @@ h1.col-lg-3 {
     overflow: hidden;
     /* position: fixed; */
 }
+
+.nav-tabs .active {
+    background-color: #17a3db00;
+}
+
+.tab-content .active {
+    background-color: #17a3db00;
+    color: black
+}
+
+.datepicker input {
+    border: 1px solid rgb(231, 231, 231) ;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.tab-content input, span {
+    margin: 5px 0 5px
+}
